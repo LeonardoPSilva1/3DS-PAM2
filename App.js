@@ -38,7 +38,7 @@ export default function App() {
      
      />
 <Text style={styles.text} >Séries</Text>
-<FlatList
+  <FlatList
      horizontal = {true}
      data= {Series}
      keyExtractor = {(item) => item.id}

@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const style = StyleSheet.create({
 
-    containerFilmes :{
+    containerBebidas :{
         paddingTop:10,
         paddingBottom:16,
         paddingRight: 16,
@@ -10,7 +10,7 @@ const style = StyleSheet.create({
 
     },
 
-    tituloFilmes :{
+    saborBebidas :{
         color: '#fff',
         fontSize: 12,
         paddingTop: 8
@@ -23,7 +23,7 @@ const style = StyleSheet.create({
         paddingLeft: 4
     },
 
-    imagemFilmes:{
+    imagemBebidas:{
         width: '100%',
         height: 170,
         borderRadius: 10
