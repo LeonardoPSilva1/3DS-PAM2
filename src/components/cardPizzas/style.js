@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const style = StyleSheet.create({
 
-    containerSeries :{
+    containerPizzas :{
         paddingTop:10,
         paddingBottom:16,
         paddingRight: 16,
@@ -10,20 +10,20 @@ const style = StyleSheet.create({
 
     },
 
-    tituloSeries :{
+    nomePizzas :{
         color: '#fff',
         fontSize: 12,
         paddingTop: 8
 
-   },
+    },
 
-    notSeries:{
+    precoPizzas:{
         fontSize: 10,
         color: '#fff',
         paddingLeft: 4
     },
 
-    imagemSeries:{
+    imagemPizzas:{
         width: '100%',
         height: 170,
         borderRadius: 10

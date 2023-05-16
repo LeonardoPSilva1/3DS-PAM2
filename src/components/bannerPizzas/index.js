@@ -2,14 +2,14 @@ import React,{Fragment} from "react";
 import {Image, Text} from "react-native";
 import styles from "./style";
 
-export default function BannerFilmes(){
+export default function BannerPizzas(){
 
     const imagem = Math.floor(Math.random() * 10 + 1);
     
     return(
 
         <>
-            <Text style = {styles.textBanner}>EM CARTAZ</Text>
+            <Text style = {styles.textBanner}></Text>
 
             <Image style = {styles.imageBanner}  source={require(`../../Img/${imagem}.jpg`)}/>
         </>

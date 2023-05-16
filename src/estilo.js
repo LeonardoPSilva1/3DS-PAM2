@@ -2,11 +2,15 @@ import { StyleSheet } from "react-native";
 
 const estilo = StyleSheet.create({
 
+body:{
+    backgroundColor: '#fff'
+},
+
 container:{
     flex:1,
     alignItems:'center',
     justifyContent:'center',
-    backgroundColor:'#D3D3D3'
+    backgroundColor:'#808080'
 },
 gradientBackColor:{
     position:'absolute',

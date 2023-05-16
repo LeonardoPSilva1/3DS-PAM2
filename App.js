@@ -1,60 +1,83 @@
 import { StatusBar } from 'expo-status-bar';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
-import BannerFilmes from './src/components/bannerFilmes';
-import CardFilmes from './src/components/cardFilmes';
-import CardSeries from './src/components/cardSeries';
+import BannerPizzas from './src/components/bannerPizzas';
 
-import Filmes from './src/components/data/movies.js';
-import Series from './src/components/data/serie.js';
+import CardPizzas from './src/components/cardPizzas';
+import CardEsfihas from './src/components/cardEsfihas';
+import CardBebidas from './src/components/cardBebidas';
+
+import Pizzas from './src/components/data/pizzas';
+import Esfihas from './src/components/data/esfihas';
+import Bebidas from './src/components/data/bebidas';
 import Header from './src/components/header';
 import SearchBar from './src/components/searchbar';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
      <Header></Header>
      <SearchBar></SearchBar>
-     <BannerFilmes></BannerFilmes>
+
+     <BannerPizzas></BannerPizzas>
 
 
   <View style={{width:"90%"}}>
 
-  <Text style={styles.text} >Filmes</Text>
+  <Text style={styles.text} >Pizza - Sabores</Text>
      <FlatList
      horizontal = {true}
-     data= {Filmes}
+     data={Pizzas}
      keyExtractor = {(item) => item.id}
      renderItem = {({item}) => (
 
          
-        <CardFilmes
-        titulo = {item.nome}
-        nota = {item.nota}
-        imagem = {item.imagem}
-        />
+      <CardPizzas
+        nome={item.nome}
+        preco={item.preco}
+        imagem={item.imagem}
+      />
         
-     )}
+  )}
 
      
      />
-<Text style={styles.text} >Séries</Text>
-  <FlatList
-     horizontal = {true}
-     data= {Series}
-     keyExtractor = {(item) => item.id}
-     renderItem = {({item}) => (
 
-         
-        <CardSeries
-        titulo = {item.nome}
-        nota = {item.nota}
-        imagem = {item.imagem}
+  <Text style={styles.text} >Esfihas - Sabores</Text>
+    <FlatList
+      horizontal = {true}
+      data={Esfihas}
+      keyExtractor={(item) => item.id}
+      renderItem={({item}) => (
+
+
+    <CardEsfihas
+      nome={item.nome}
+      preco={item.preco}
+      imagem={item.imagem}
+    />
+  )}
+
+  />
+
+  <Text style={styles.text} >Refrigerantes</Text>
+    <FlatList
+      horizontal = {true}
+      data={Bebidas}
+      keyExtractor={(item) => item.id}
+      renderItem={({item}) => (
+
+
+        <CardBebidas
+          nome={item.nome}
+          preco={item.preco}
+          imagem={item.imagem}
         />
-        
-     )}
+      )}
+    />
+  
+  
 
-     
-     />
 
      </View>
 
