@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create({
 
     containerPizzas :{
+        opacity:'80%',
         paddingTop:10,
         paddingBottom:16,
         paddingRight: 16,
@@ -11,16 +12,16 @@ const style = StyleSheet.create({
     },
 
     nomePizzas :{
-        color: '#fff',
-        fontSize: 12,
-        paddingTop: 8
-
+        color: 'aliceblue',
+        fontSize: 17,
+        paddingTop:13
     },
 
     precoPizzas:{
-        fontSize: 10,
-        color: '#fff',
-        paddingLeft: 4
+        fontSize: 13,
+        color: 'aliceblue',
+        paddingLeft: 3.4,
+        marginBottom:40
     },
 
     imagemPizzas:{

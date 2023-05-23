@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { FlatList, ImageBackground, StyleSheet, Text, View } from 'react-native';
 import BannerPizzas from './src/components/bannerPizzas';
 
 import CardPizzas from './src/components/cardPizzas';
@@ -88,17 +88,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex:1,
-    backgroundColor: '#141a29',
-    alignItems:"center"
-
-
+    backgroundColor: '#8d1b1b',
+    alignItems:"center",
     
     
   },
 
   text:{
-    fontSize: 30,
-    color: 'white'
+    fontSize: 35,
+    color: 'aliceblue'
 
   }
 });

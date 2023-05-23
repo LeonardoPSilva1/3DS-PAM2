@@ -1,8 +1,10 @@
 import { StyleSheet } from "react-native";
 
 
+
 const estilo = StyleSheet.create({
 
+    
 
     viewHeader:{
         flexDirection:"row",
@@ -11,7 +13,9 @@ const estilo = StyleSheet.create({
         marginTop:8,
         marginLeft:10
     },
+    
     textHeader :{
+        fontfamily: 'Rubik Puddles',
         fontSize:25,
         color:"white",
         fontWeight:"bold",

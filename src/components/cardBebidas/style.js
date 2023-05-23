@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create({
 
     containerBebidas :{
+        opacity:'80%',
         paddingTop:10,
         paddingBottom:16,
         paddingRight: 16,
@@ -11,16 +12,15 @@ const style = StyleSheet.create({
     },
 
     saborBebidas :{
-        color: '#fff',
-        fontSize: 12,
-        paddingTop: 8
-
+        color: 'aliceblue',
+        fontSize: 17,
+        paddingTop:13
     },
 
     precoBebidas:{
-        fontSize: 10,
-        color: '#fff',
-        paddingLeft: 4
+        fontSize: 13,
+        color: 'aliceblue',
+        paddingLeft: 3.4
     },
 
     imagemBebidas:{

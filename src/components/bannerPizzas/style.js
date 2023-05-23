@@ -8,7 +8,10 @@ const styles = StyleSheet.create({
     width: '90%',
     height: 200,
     marginTop:15,
+    marginBottom:35,
     borderRadius:10
+
+    
     },
 
     textBanner:{

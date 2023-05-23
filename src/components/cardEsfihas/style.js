@@ -3,24 +3,23 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create({
 
     containerEsfihas :{
+        opacity:'80%',
         paddingTop:10,
         paddingBottom:16,
         paddingRight: 16,
-        width: 140
-
+        width: 140,
     },
 
     nomeEsfihas :{
-        color: '#fff',
-        fontSize: 12,
-        paddingTop: 8
-
+        color: 'aliceblue',
+        fontSize: 17,
+        paddingTop:13
    },
 
     precoEsfihas:{
-        fontSize: 10,
-        color: '#fff',
-        paddingLeft: 4
+        fontSize: 13,
+        color: 'aliceblue',
+        paddingLeft: 3.4
     },
 
     imagemEsfihas:{

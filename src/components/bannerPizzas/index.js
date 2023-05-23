@@ -9,7 +9,11 @@ export default function BannerPizzas(){
     return(
 
         <>
-            <Text style = {styles.textBanner}></Text>
+            <Text style = {styles.textBanner}>
+
+
+            </Text>
+
 
             <Image style = {styles.imageBanner}  source={require(`../../Img/${imagem}.jpg`)}/>
         </>

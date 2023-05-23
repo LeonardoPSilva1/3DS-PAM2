@@ -1,26 +1,12 @@
 import { StyleSheet } from "react-native";
 
 const estilo = StyleSheet.create({
-
-body:{
-    backgroundColor: '#fff'
-},
-
+    
 container:{
     flex:1,
     alignItems:'center',
     justifyContent:'center',
     backgroundColor:'#808080'
-},
-gradientBackColor:{
-    position:'absolute',
-    left:0,
-    right:0,
-    top:0,
-    height:300,
-    alignItems:'center',
-    justifyContent:'center'
-
 },
 box:{
     marginTop:70,
@@ -31,6 +17,7 @@ box:{
     height:400
 },
 input:{
+    
     borderRadius:5,
     width:'80%',
     marginLeft:4,
@@ -50,6 +37,7 @@ button:{
     alignItems:"center"
 },
 text:{
+    fontFamily: 'arial',
     fontWeight:'bold',
     color:'white'
 },
@@ -59,6 +47,6 @@ image:{
 }
 
 
-
 })
+
 export default estilo;
