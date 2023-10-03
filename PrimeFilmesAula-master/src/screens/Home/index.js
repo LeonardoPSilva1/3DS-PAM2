@@ -4,7 +4,7 @@ import BannerMovies from '../../components/bannerFilmes';
 import CardMovies from '../../components/cardFilmes';
 import Header from '../../components/header';
 import SearchBar from '../../components/searchbar';
-import Filmes from '../../data/movies'
+
 
 import React,{useState, useEffect} from 'react';
 
@@ -38,6 +38,26 @@ export default function App() {
     }
     getMovies();
   }, [])
+
+  const [series, setSeries] = useState([]);
+
+  useEffect(() => { 
+    async function getSeries() {
+      try{
+        const response = await fetch(
+          'https://api.themoviedb.org/3/tv/popular?api_key=001049ffac5df31516d05c1338284841&language=pt-br');
+          const data = await response.json();
+
+          console.log(data.results)
+          setSeries(data.results)
+        }
+
+        catch(error){
+          console.log("REQUISIÇÃO FALHOU ", Error)
+        }
+    }
+    getSeries();
+  }, [])
   
 
 
@@ -66,7 +86,9 @@ export default function App() {
               <CardMovies
                 titulo={item.title}
                 imagem={item.poster_path}
-                nota={item.nota}
+                nota={item.vote_average}
+                descricao={item.overview}
+
               />
             )}
           />
@@ -76,7 +98,7 @@ export default function App() {
           <FlatList
             horizontal={true}
             showsHorizontalScrollIndicator={false}
-            data={movies}
+            data={series}
             keyExtractor={(item) => item.id}
             
             
@@ -84,9 +106,10 @@ export default function App() {
 
 
               <CardMovies
-                titulo={item.title}
+                titulo={item.name}
                 imagem={item.poster_path}
-                nota={item.nota}
+                nota={item.vote_average}
+                descricao={item.overview}
               />
             )}
           />
